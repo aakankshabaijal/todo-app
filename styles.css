@@ -63,15 +63,15 @@ main {
 
 .todoItem {
 	display: flex;
-
+	/* margin-bottom: 0.15rem; */
 	align-items: center;
 	width: 54vw;
 	height: 2rem;
 	padding: 0.5rem;
 	margin-left: 22vw;
 	background-color: hsl(235, 24%, 19%);
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .todoItem_checkbox {
@@ -100,4 +100,9 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: rgb(255, 255, 255, 0.5);
 }
