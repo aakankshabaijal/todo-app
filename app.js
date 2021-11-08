@@ -82,8 +82,10 @@ const myTodo = new TODO();
 userInputToDo.addEventListener('keyup', (event) => {
 	if (event.keyCode === 13) {
 		//when enter is pressed
-		myTodo.addToDo(userInputToDo.value);
-		userInputToDo.value = '';
+		if (userInputToDo.value !== '') {
+			myTodo.addToDo(userInputToDo.value);
+			userInputToDo.value = '';
+		}
 	}
 });
 
