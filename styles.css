@@ -85,7 +85,7 @@ main {
 }
 
 .todoItem_delete {
-	align: right;
+	border: 1px solid whitesmoke;
 }
 
 footer {
@@ -105,4 +105,9 @@ footer {
 .completed {
 	text-decoration: line-through;
 	color: rgb(255, 255, 255, 0.5);
+}
+
+.deleteButton {
+	padding: 0.5rem;
+	margin: 0;
 }
