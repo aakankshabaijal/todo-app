@@ -4,10 +4,13 @@
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
 }
+body {
+	background-color: hsl(235, 21%, 11%);
+}
 
 header {
 	background-image: url("images/bg-desktop-dark.jpg");
-	height: 40vh;
+	height: 35vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,6 +21,7 @@ header .heading {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 2rem;
 }
 
 header .createToDo {
@@ -30,6 +34,11 @@ header .createToDo {
 	background-color: hsl(235, 24%, 19%); //very dark desaturated_blue
 }
 
+#toggleTheme {
+	border: none;
+	background-color: transparent;
+}
+
 .userInput {
 	width: 50vw;
 	height: 2rem;
@@ -38,16 +47,57 @@ header .createToDo {
 	background-color: hsl(235, 24%, 19%); //very dark desaturated blue
 }
 
-.addTaskButton {
+.addTaskButton,
+.deleteButton {
 	/* padding: 1rem; */
 	padding: 0;
 	margin: 0 1.25rem;
 	background-color: hsl(235, 24%, 19%);
 	border: none;
-	color: smokewhite;
+	color: whitesmoke;
 }
 
 main {
-	background-color: hsl(235, 21%, 11%);
-	height: 60vh;
+	margin-top: 1rem;
+}
+
+.todoItem {
+	display: flex;
+
+	align-items: center;
+	width: 54vw;
+	height: 2rem;
+	padding: 0.5rem;
+	margin-left: 22vw;
+	background-color: hsl(235, 24%, 19%);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.todoItem_checkbox {
+	margin: 1rem;
+}
+
+.todoItem_text {
+	/* align-self: start; */
+	margin-left: 1rem;
+	width: 85%;
+}
+
+.todoItem_delete {
+	align: right;
+}
+
+footer {
+	width: 54vw;
+	height: 2rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	margin-left: 22vw;
+	background-color: hsl(235, 24%, 19%);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

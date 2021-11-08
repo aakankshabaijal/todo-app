@@ -17,6 +17,8 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
+      position: fixed;
+      bottom: 0;
       font-size: 11px;
       text-align: center;
     }
@@ -32,22 +34,38 @@
 
   <header>
     <div class="heading">
-      <h1>TODO</h1>
-      <button>Toggle Theme</button>
+      <h1>T O D O</h1>
+      <button id="toggleTheme"> <img src="images/icon-sun.svg"> </button>
     </div>
     <div class="createToDo">
-
-      <button class="addTaskButton"><i class="fas fa-plus"></i></button>
-
+      <button class="addTaskButton" type="submit"><i class="fas fa-plus"></i></button>
       <div>
         <input class="userInput" type="text" placeholder="Create New To Do">
       </div>
     </div>
   </header>
-
+  <!-- <i class="fas fa-trash-alt"></i> -->
 
 
   <main>
+    <div class="todoList">
+      <div class="todoItem" style="display: none;">
+        <div class="todoItem_checkbox">
+          <input type="checkbox" id="checkbox1">
+          <label for="checkbox1"></label>
+        </div>
+        <div class="todoItem_text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            doloremque?</p>
+        </div>
+        <div class="todoItem_delete">
+          <button class="deleteButton"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <footer class="createToDo">
+      <p>Total Tasks</p>
+    </footer>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
